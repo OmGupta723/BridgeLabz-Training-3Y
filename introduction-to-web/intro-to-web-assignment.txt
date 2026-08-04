@@ -1,0 +1,232 @@
+ASSIGNMENT 1 – Introduction to Web Development
+
+
+Q1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+Answer:
+
+Frontend development is the part of web development that focuses on the user interface of a website. It includes everything that users can see and interact with, such as buttons, images, menus, forms, and layouts. Frontend developers mainly use HTML, CSS, and JavaScript to design attractive and responsive web pages.
+
+Backend development is the server-side part of a website. It handles data processing, user authentication, business logic, and communication with databases. Backend developers commonly use programming languages such as Java, Python, PHP, or Node.js to build the functionality of a website.
+
+A full-stack developer has knowledge of both frontend and backend development. They can build complete web applications from designing the interface to managing the server and database.
+
+Example:
+In Amazon, the product page and search bar are frontend, while processing orders, checking user login details, and storing product information are handled by the backend. A full-stack developer can work on both parts.
+
+
+Q2. Create a simple diagram showing how the client-server model works in web architecture.
+
+Answer:
+
+The client-server model is the basic communication model used on the internet. The client is usually a web browser, while the server stores website files and responds to user requests.
+
+Diagram:
+
+                HTTP Request
++--------------------+ -------------------->
+| Client (Browser)   |
++--------------------+
+
+                     +--------------------+
+                     |     Web Server     |
+                     +--------------------+
+
+<-------------------- HTTP Response
+
+The browser sends a request to the web server when a user enters a website URL. The server processes the request and sends back HTML, CSS, JavaScript, images, and other required files. The browser then displays the web page to the user.
+
+
+Q3. Describe how a browser requests and displays a web page from a web server.
+
+Answer:
+
+When a user enters a website address in the browser, the browser first sends an HTTP request to the web server. The server receives the request, processes it, and searches for the required files or data. If the page exists, the server sends the HTML, CSS, JavaScript, images, and other resources back to the browser.
+
+The browser downloads these files and starts rendering the page. HTML provides the structure, CSS adds styling, and JavaScript adds interactivity. Finally, the browser displays the complete web page for the user. This entire process usually happens within a few seconds.
+
+
+Q4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+
+Answer:
+
+A web development environment requires several important tools that help developers write, test, and manage code efficiently.
+
+1. Visual Studio Code (VS Code)
+   VS Code is a popular source code editor used to write HTML, CSS, JavaScript, and many other programming languages.
+
+2. Google Chrome
+   It is used to open and test web pages. Developers also use Chrome Developer Tools to inspect elements and debug websites.
+
+3. Git
+   Git is a version control system that tracks changes in the project and helps developers manage different versions of their code.
+
+4. GitHub
+   GitHub is an online platform where developers store, share, and collaborate on Git repositories.
+
+5. Node.js
+   Node.js allows JavaScript to run outside the browser and is used to install libraries and development tools.
+
+These tools make web development easier, organized, and more efficient.
+
+
+Q5. Explain what a web server is and give examples of commonly used servers.
+
+Answer:
+
+A web server is a software or system that stores website files and delivers them to users through the internet. Whenever a user requests a web page using a browser, the web server processes the request and sends the required files such as HTML, CSS, JavaScript, images, and videos.
+
+A web server works continuously to receive requests from multiple users and provide quick responses. It also handles security, hosting, and communication between clients and databases.
+
+Some commonly used web servers are:
+
+• Apache HTTP Server
+• Nginx
+• Microsoft Internet Information Services (IIS)
+• LiteSpeed Web Server
+• Node.js (used to create web servers)
+
+Among these, Apache and Nginx are the most popular web servers used in modern web development.
+
+
+Q6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+Answer:
+
+In a web development project, different team members have different responsibilities to ensure the application works properly.
+
+Frontend Developer:
+A frontend developer designs and develops the user interface of a website. They create web pages using HTML, CSS, and JavaScript so that users can easily interact with the application. Their main focus is to make the website attractive, responsive, and user-friendly.
+
+Backend Developer:
+A backend developer works on the server-side of the application. They develop the business logic, handle user authentication, create APIs, and manage communication between the application and the database. They use programming languages such as Java, Python, PHP, or Node.js.
+
+Database Administrator (DBA):
+A Database Administrator is responsible for managing and maintaining the database. The DBA creates tables, manages user permissions, performs backups, improves database performance, and ensures that data is secure and available whenever required.
+
+All three roles work together to develop a complete and efficient web application.
+
+
+Q7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+
+Answer:
+
+I successfully installed Visual Studio Code on my system and configured it for web development.
+
+The following extensions were installed:
+
+1. Live Server
+   It allows me to run HTML files directly in the browser and automatically refreshes the page whenever I save changes.
+
+2. Prettier – Code Formatter
+   It automatically formats HTML, CSS, and JavaScript code to improve readability.
+
+3. HTML CSS Support
+   It provides code suggestions and auto-completion while writing HTML and CSS.
+
+4. JavaScript (ES6) Code Snippets
+   It provides useful shortcuts for writing JavaScript code quickly.
+
+These tools make coding faster, easier, and help in reducing errors. A screenshot of my VS Code setup is attached separately as required.
+
+
+Q8. Explain the difference between static and dynamic websites. Provide an example of each.
+
+Answer:
+
+A static website displays the same content to every visitor. The pages are already created and stored on the server. The content only changes when the developer manually edits the files. Static websites are simple, fast, and suitable for portfolios, personal websites, and company information pages.
+
+A dynamic website generates content based on user requests or data stored in a database. Different users may see different content depending on their account or actions. Dynamic websites require backend programming and databases.
+
+Differences:
+
+• Static websites have fixed content, while dynamic websites generate content dynamically.
+• Static websites are easier to develop, whereas dynamic websites are more interactive.
+• Static websites usually do not require a database, but dynamic websites commonly use one.
+
+Examples:
+
+Static Website:
+College information website or personal portfolio.
+
+Dynamic Website:
+Amazon, Facebook, Instagram, Flipkart, and Gmail.
+
+
+Q9. Research and list five web browsers. Explain how rendering engines differ between them.
+
+Answer:
+
+A web browser is a software application that allows users to access and browse websites on the internet. Different browsers use different rendering engines to display web pages.
+
+Some popular web browsers are:
+
+1. Google Chrome – Blink Rendering Engine
+2. Microsoft Edge – Blink Rendering Engine
+3. Mozilla Firefox – Gecko Rendering Engine
+4. Apple Safari – WebKit Rendering Engine
+5. Opera – Blink Rendering Engine
+
+A rendering engine reads HTML, CSS, and JavaScript files and converts them into the web page displayed on the screen. Different rendering engines may process web pages slightly differently, which can sometimes result in small differences in appearance or performance. Modern developers test their websites in multiple browsers to ensure compatibility.
+
+
+Q10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+
+Answer:
+
+Basic Web Architecture Diagram
+
+                    User
+                      |
+                      |
+                      v
+             +----------------+
+             | Client Browser |
+             +----------------+
+                      |
+                 HTTP Request
+                      |
+                      v
+             +----------------+
+             |   Web Server   |
+             +----------------+
+                      |
+                  API Request
+                      |
+                      v
+             +----------------+
+             |      APIs      |
+             +----------------+
+                      |
+                  Database Query
+                      |
+                      v
+             +----------------+
+             |    Database    |
+             +----------------+
+                      |
+                 Response Data
+                      |
+                      v
+             +----------------+
+             |   Web Server   |
+             +----------------+
+                      |
+                HTTP Response
+                      |
+                      v
+             +----------------+
+             | Client Browser |
+             +----------------+
+
+Explanation:
+
+1. The user enters a website address in the browser.
+2. The browser sends an HTTP request to the web server.
+3. The web server processes the request.
+4. If data is required, the server communicates with APIs.
+5. APIs interact with the database to retrieve or store information.
+6. The database returns the requested data.
+7. The server prepares the response and sends it back to the browser.
+8. Finally, the browser displays the web page to the user.
+
