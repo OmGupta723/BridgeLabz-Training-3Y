@@ -1,0 +1,44 @@
+.container{
+    border: 5px double red;
+    width: 80%;
+    color: white;
+    padding: 20px 50px;
+    margin: 20px auto;
+    font-size: 10px;
+    border-radius:10px 0px 10px 0px;
+    background-image: url("../28804.jpg");
+    background-size:cover ;
+    backdrop-repeat:no-repeat;
+}
+.red{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    /* display: block; */
+    color: white;
+    visibility: visible;
+
+}
+.first-letter{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: rgb(236, 101, 101);
+}
+
+/* .green{
+    background-color: green;
+    display: inline ;
+} */
+
+.container p{
+    /* font-size: 2rem; */
+    font-size: 1em;
+    line-height: 2rem;
+}
+.btn{
+    background-color: rgb(37, 112, 112);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+}
