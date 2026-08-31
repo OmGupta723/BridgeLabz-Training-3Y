@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #4c1d95;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.section{
+    width: 100%;
+    min-height: 80vh;
+    padding: 100px 10%;
+    border-bottom: 5px solid grey;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.section h2{
+    font-size: 2.5rem;
+    margin: 25px;
+}
+
+.section p{
+    max-width: 700px;
+    font-size: 1.2rem;
+}
+
+.history{
+    background: 
+    linear-gradient(
+        120deg,
+        #fbc2eb,
+        #a6c1ee
+    );
+}
+
+
+.culture {
+    background:
+        radial-gradient(
+            circle,
+            #fde68a,
+            #623f04
+        );
+}
+
+.places{
+    background:
+    linear-gradient(
+        120deg,
+        #c7d2fe,
+        #3b1fb6
+    )
+}
+
+footer {
+    background-color: #4c1d95;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
