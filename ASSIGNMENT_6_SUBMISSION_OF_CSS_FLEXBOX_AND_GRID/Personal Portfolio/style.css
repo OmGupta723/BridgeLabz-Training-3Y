@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 8%;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Main */
+
+main {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+
+    padding: 60px 8%;
+}
+
+
+/* About Section */
+
+.about {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 15px;
+}
+
+
+/* Image Section */
+
+.image-section {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Image */
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ddd;
+
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 18px;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}

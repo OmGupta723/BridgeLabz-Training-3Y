@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+
+header {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* Navigation */
+
+nav {
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* Main */
+
+main {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 25px;
+
+    padding: 40px;
+}
+
+
+/* Boxes */
+
+.box {
+    flex: 1;
+
+    min-height: 180px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    transition: transform 0.3s;
+}
+
+
+/* Hover Effect */
+
+.box:hover {
+    transform: rotate(2deg);
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+}
