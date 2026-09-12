@@ -1,0 +1,22 @@
+.navbar{
+    border:1px solid red;
+}
+
+.logo{
+    border:1px solid red;
+}
+.nav-links{
+    border:1px solid red;
+
+}
+.nav-links ul{
+    border:1px solid rgb(10,227,75);
+
+}
+.nav-links ul li{
+    border:1px solid rgb(60,0,255);
+}
+.nav-icons{
+    border:1px solid red;
+
+}

@@ -1,0 +1,64 @@
+.container{
+    height: 500px;
+    width: 600px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    /* background-color: rgb(255, 251, 0); */
+    text-align: center;
+    box-shadow: -10px -10px 50px black,
+    10px 10px 50px blue;
+
+    /* background-image:linear-gradient(to right bottom,red,blue); */
+    /* background-image: linear-gradient(0deg,green 0% 33%,white 33% 66%,
+    orange 74% 100%); */
+
+    background-image: repeating-linear-gradient(125deg, rgb(13, 204, 130) 0% 10%,rgb(9, 224, 199) 10% 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.card:hover{
+    box-shadow: -10px -10px 50px red,10px 10px 50px blue;
+    /* transform: scale(1.1); */
+    /* transform: translate(-50px);   //Move left*/
+    /* transform: translate(50px);    //Move right */
+
+    /* transform: translate(-50px,-50px); //Move Diagonally up*/
+
+    /* transform: translate(50px,50px); //Move diagonally right */
+
+    transform: rotate(360deg) scale(1.1) translate(50px);
+    transition: all 2s ease-in-out;
+
+}
+
+.btn{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius:30px;
+    padding: 0.5rem 3rem;
+    /* transition: all 1s ease; */
+    transition: all 1s ease-out;
+}
+
+.btn:hover{
+    background-color: cyan;
+    transform: scale(1.2);
+    color: black;
+}
+
+.btn:active{
+    color: red;
+}

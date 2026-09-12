@@ -1,0 +1,37 @@
+.container{
+    border: 1px solid red;
+    width: 500px;
+    height: 900px;
+}
+
+.box{
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    color: aliceblue;
+}
+
+.box-1{
+    background-color: red;
+}
+
+.box-2{
+   background-color: green;
+
+   /* position:static */
+   /* position: relative; */
+   /* position:absolute;  */
+   /* position: fixed; */
+   position: sticky;
+   right: 0px;
+   top: 10px;
+   
+}
+
+.box-3{
+    background-color: purple;
+}
+.box-4{
+    background-color :aqua;
+}
+

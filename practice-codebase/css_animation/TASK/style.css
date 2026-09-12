@@ -1,0 +1,33 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius:50px;
+    background-color: blue;
+    animation: ballbounce 2s ease infinite;
+}
+
+@keyframes ballbounce {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(200px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-100px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+
+    
+}

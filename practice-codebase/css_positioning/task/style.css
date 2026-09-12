@@ -1,0 +1,89 @@
+/* .container{
+    border: 1px solid red;
+    width: 500px;
+    height: 900px;
+}
+
+.box{
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    color: aliceblue;
+}
+
+.box-1{
+    position: relative;
+    background-color: red;
+    z-index: 10;
+
+}
+
+.box-2{
+   background-color: green;
+   position: relative;
+   left: 40px;
+   bottom: 100px;
+}
+
+.box-3{
+    background-color: purple;
+    position: relative;
+    left: 80px;
+   bottom: 200px;
+   z-index: 5;
+}
+.box-4{
+    background-color :aqua;
+    position: relative;
+    left: 120px;
+   bottom: 300px;
+}
+ */
+
+.container{
+    border: 2px solid red;
+    width: 100%;
+    height: 1200px;
+}
+.box{
+    border: 2px solid black;
+    width: 300px;
+    height: 100px;
+    position: sticky;
+}
+/* Higher the z-index, it will appear in front. */
+.box-1{
+    background-color: red;
+  
+    width : 200px;
+    height: 200px;
+    top: 0px;
+}
+.box-2{
+    background-color: green;
+
+    width : 160px;
+    height: 160px;
+    left: 25px;
+    top: 20px;
+    /* bottom: 465px */
+}
+.box-3{
+    background-color: blue;
+
+    width : 120px;
+    height: 120px;
+    left: 45px;
+    top: 40px;
+    /* bottom: 480px; */
+}
+.box-4{
+    background-color:aqua;
+
+    width : 80px;
+    height: 80px;
+    left: 65px;
+    top: 60px;
+    /* bottom: 500px; */
+}
+
