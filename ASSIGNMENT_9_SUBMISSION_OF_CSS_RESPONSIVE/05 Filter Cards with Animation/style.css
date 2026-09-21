@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: filter 0.5s;
+}
+
+.gray {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover img {
+    filter: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
