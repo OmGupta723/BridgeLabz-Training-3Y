@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box {
+    width: 300px;
+    padding: 30px;
+    border: 5px solid black;
+}
+
+.default {
+    background-color: lightblue;
+}
+
+.border-box {
+    background-color: lightgreen;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 80%;
+    }
+}

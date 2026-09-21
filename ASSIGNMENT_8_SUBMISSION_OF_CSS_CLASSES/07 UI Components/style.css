@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    background: linear-gradient(to right, lightblue, white);
+}
+
+.card {
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid blue;
+}
+
+button:focus {
+    outline: 2px solid black;
+}
