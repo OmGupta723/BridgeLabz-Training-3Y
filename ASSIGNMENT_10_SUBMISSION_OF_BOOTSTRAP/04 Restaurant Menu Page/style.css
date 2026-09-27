@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: white;
+}
+
+section img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+table {
+    background-color: white;
+}
+
+footer {
+    margin-top: 30px;
+}
