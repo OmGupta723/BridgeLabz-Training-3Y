@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form id="form">
+        <input id="name" placeholder="Name">
+        <span id="nameError"></span>
+        <br><br>
+
+        <input id="email" placeholder="Email">
+        <span id="emailError"></span>
+        <br><br>
+
+        <input id="password" type="password" placeholder="Password">
+        <span id="passwordError"></span>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        let form = document.getElementById("form");
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let password = document.getElementById("password");
+
+        function validate() {
+            let valid = true;
+
+            document.getElementById("nameError").textContent = "";
+            document.getElementById("emailError").textContent = "";
+            document.getElementById("passwordError").textContent = "";
+
+            if (name.value.trim() === "") {
+                document.getElementById("nameError").textContent =
+                    " Name is required";
+                valid = false;
+            }
+
+            if (email.value.trim() === "") {
+                document.getElementById("emailError").textContent =
+                    " Email is required";
+                valid = false;
+            } else if (!email.value.includes("@")) {
+                document.getElementById("emailError").textContent =
+                    " Email must contain @";
+                valid = false;
+            }
+
+            if (password.value.length < 6) {
+                document.getElementById("passwordError").textContent =
+                    " Password must have at least 6 characters";
+                valid = false;
+            }
+
+            return valid;
+        }
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (validate()) {
+                document.getElementById("message").textContent =
+                    "Form Submitted Successfully";
+            } else {
+                document.getElementById("message").textContent = "";
+            }
+        });
+
+        name.addEventListener("input", validate);
+        email.addEventListener("input", validate);
+        password.addEventListener("input", validate);
+    </script>
+</body>
+</html>

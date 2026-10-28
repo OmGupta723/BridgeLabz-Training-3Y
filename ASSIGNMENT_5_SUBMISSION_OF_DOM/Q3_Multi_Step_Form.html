@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Step Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <div id="step1">
+        <p>Step 1: Name</p>
+        <input id="name" placeholder="Enter name">
+        <button onclick="next(2)">Next</button>
+    </div>
+
+    <div id="step2" hidden>
+        <p>Step 2: Email</p>
+        <input id="email" placeholder="Enter email">
+        <button onclick="showStep(1)">Back</button>
+        <button onclick="next(3)">Next</button>
+    </div>
+
+    <div id="step3" hidden>
+        <p>Step 3: Password</p>
+        <input id="password" type="password" placeholder="Enter password">
+        <button onclick="showStep(2)">Back</button>
+        <button onclick="finish()">Submit</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script>
+        function showStep(step) {
+            document.getElementById("step1").hidden = step !== 1;
+            document.getElementById("step2").hidden = step !== 2;
+            document.getElementById("step3").hidden = step !== 3;
+            document.getElementById("message").textContent = "";
+        }
+
+        function next(step) {
+            if (step === 2) {
+                if (document.getElementById("name").value.trim() === "") {
+                    document.getElementById("message").textContent =
+                        "Please enter your name.";
+                    return;
+                }
+            }
+
+            if (step === 3) {
+                let email = document.getElementById("email").value;
+
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    document.getElementById("message").textContent =
+                        "Please enter a valid email.";
+                    return;
+                }
+            }
+
+            showStep(step);
+        }
+
+        function finish() {
+            let password = document.getElementById("password").value;
+
+            if (password.length < 6) {
+                document.getElementById("message").textContent =
+                    "Password must have at least 6 characters.";
+                return;
+            }
+
+            document.getElementById("step3").hidden = true;
+            document.getElementById("message").textContent =
+                "Name: " + document.getElementById("name").value +
+                " | Email: " + document.getElementById("email").value +
+                " | Registration completed!";
+        }
+    </script>
+</body>
+</html>

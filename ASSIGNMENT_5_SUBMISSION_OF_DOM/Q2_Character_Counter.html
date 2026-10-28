@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+</head>
+<body>
+    <h2>Character Counter</h2>
+
+    <textarea id="text" placeholder="Enter text"></textarea>
+    <p id="count">100 characters remaining</p>
+    <button id="reset">Reset</button>
+
+    <script>
+        let text = document.getElementById("text");
+        let count = document.getElementById("count");
+        let max = 100;
+
+        function updateCount() {
+            let remaining = max - text.value.length;
+
+            count.textContent = remaining + " characters remaining";
+
+            if (remaining === 0) {
+                count.style.color = "red";
+            } else if (remaining <= 20) {
+                count.style.color = "orange";
+            } else {
+                count.style.color = "black";
+            }
+        }
+
+        text.addEventListener("beforeinput", function(event) {
+            if (text.value.length >= max &&
+                event.inputType.startsWith("insert")) {
+                event.preventDefault();
+            }
+        });
+
+        text.addEventListener("input", updateCount);
+
+        document.getElementById("reset").addEventListener("click", function() {
+            text.value = "";
+            updateCount();
+        });
+    </script>
+</body>
+</html>

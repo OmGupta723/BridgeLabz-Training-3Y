@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h2>Product List</h2>
+
+    <input id="product" placeholder="Enter product">
+    <button id="add">Add</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        let input = document.getElementById("product");
+        let list = document.getElementById("list");
+
+        document.getElementById("add").addEventListener("click", function() {
+            if (input.value.trim() === "") {
+                return;
+            }
+
+            let li = document.createElement("li");
+            let span = document.createElement("span");
+            let edit = document.createElement("button");
+            let del = document.createElement("button");
+
+            span.textContent = input.value;
+            edit.textContent = "Edit";
+            del.textContent = "Delete";
+
+            li.append(span, edit, del);
+            list.appendChild(li);
+            input.value = "";
+        });
+
+        list.addEventListener("click", function(event) {
+            let li = event.target.closest("li");
+
+            if (!li) return;
+
+            if (event.target.textContent === "Delete") {
+                li.remove();
+            }
+
+            if (event.target.textContent === "Edit") {
+                let span = li.querySelector("span");
+                let editInput = document.createElement("input");
+
+                editInput.value = span.textContent;
+                span.replaceWith(editInput);
+                editInput.focus();
+
+                function save() {
+                    if (!editInput.isConnected) return;
+
+                    let newSpan = document.createElement("span");
+                    newSpan.textContent = editInput.value.trim() || span.textContent;
+                    editInput.replaceWith(newSpan);
+                }
+
+                editInput.addEventListener("blur", save);
+
+                editInput.addEventListener("keydown", function(e) {
+                    if (e.key === "Enter") {
+                        editInput.blur();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
