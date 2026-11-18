@@ -114,5 +114,6 @@ Welcome to the **HTML Practice** branch of the **BridgeLabz Training (3Y)** repo
 
 ## 🔗 Related Branches
 
-- [`main`](https://github.com/OmGupta723/BridgeLabz-Training-3Y/tree/main) - Root repository overview & curriculum roadmap.
-- [`css-practice`](https://github.com/OmGupta723/BridgeLabz-Training-3Y/tree/css-practice) - CSS styling, box model, and UI components.
+- [`main`](https://github.com/OmGupta723/BridgeLabz-Training-3Y/tree/main) — Root repository hub, curriculum roadmap, and architecture directory.
+- [`css-practice`](https://github.com/OmGupta723/BridgeLabz-Training-3Y/tree/css-practice) — CSS fundamentals, box model, Flexbox, Grid, animations, responsive design, and Bootstrap.
+- [`javascript-practice`](https://github.com/OmGupta723/BridgeLabz-Training-3Y/tree/javascript-practice) — Core JavaScript, ES6+ features, OOP classes, DOM manipulation, closures, and prototypes.
